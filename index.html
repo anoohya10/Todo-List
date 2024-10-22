@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do list</title>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for folders -->
+        <div class="sidebar">
+            <h2>Folders</h2>
+            <ul>
+                <li class="folder" data-folder="work">Work</li>
+                <li class="folder" data-folder="personal">Personal</li>
+                <li class="folder" data-folder="shopping">Shopping</li>
+            </ul>
+        </div>
+    <div class="todo-container">
+        <h1>My To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-btn">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
+     <!-- Sticky Notes Section -->
+     <div class="sticky-notes-container">
+        <h2>Sticky Notes</h2>
+        <div class="sticky-notes">
+            <textarea id="note-input" placeholder="Type a note..."></textarea>
+            <button id="add-note-btn">Add Note</button>
+        </div>
+        <div id="note-list"></div>
+    </div>
+</div>
+    <script src="Todolist.js"></script>
+</body>
+</html>
